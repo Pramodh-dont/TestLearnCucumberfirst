@@ -1,0 +1,12 @@
+package TestRunnerFiles;
+
+import org.testng.annotations.Test;
+
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
+
+@Test
+@CucumberOptions(features="C:\\Users\\user\\eclipse-workspace\\TestAutoamtionCucumber\\src\\test\\java\\FeatureFiles\\FeatureOfLearnWithSelenium.feature",glue = "StepDefinitionFile", monochrome = true,plugin = {"pretty","html:target/FeatureOfLearnWithSelenium.html"})
+public class TestRunnerOfSeleniumLearnFeature extends AbstractTestNGCucumberTests {
+
+}
