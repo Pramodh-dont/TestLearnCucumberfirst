@@ -19,15 +19,9 @@ public class StepDefForFeatureOfSeleniumLearn {
 	WebDriver driver;
 	String SeaechedProductOfHome;
 	String SeaechedProductOdeals;
-
-//	public StepDefForFeatureOfSeleniumLearn() {
-//		driver = new ChromeDriver();
-//		driver.manage().window().maximize();
-//	}
 	
 	@Given("User should open website")
 	public void user_should_open_and_login_to_website() {
-		// open web page
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
@@ -45,7 +39,7 @@ public class StepDefForFeatureOfSeleniumLearn {
 	public void searched_product_in_home_page_is_available_and_fetched_it_s_name() {
 		WebElement prodname = driver.findElement(By.className("product-name"));
 		String SeaechedProductOfHome = prodname.getText().split("-")[0].trim();
-		driver.quit();
+//		driver.quit();
 	}
 
 	@When("User search {string} product in deals page")
