@@ -6,7 +6,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @Test
-@CucumberOptions(features="C:\\Users\\user\\eclipse-workspace\\TestAutoamtionCucumber\\src\\test\\java\\FeatureFiles\\FeatureCucumberLearnExample.feature",glue = "StepDefinitionFile", monochrome = true,plugin = {"pretty","html:target/FeatureCucumberLearnExample.html"})
+@CucumberOptions(features="C:\\Users\\user\\eclipse-workspace\\TestAutoamtionCucumber\\src\\test\\java\\FeatureFiles\\FeatureCucumberLearnExample.feature",glue = "StepDefinitionFile", monochrome = true,plugin = {"pretty","html:Reports/FeatureCucumberLearnExample.html"})
 public class TestNGRunnerForFeatureCucumbeLearnExample extends AbstractTestNGCucumberTests {
 
 }
