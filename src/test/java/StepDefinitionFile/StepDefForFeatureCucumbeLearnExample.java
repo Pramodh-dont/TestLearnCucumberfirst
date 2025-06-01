@@ -13,7 +13,7 @@ public class StepDefForFeatureCucumbeLearnExample {
 		System.out.println("Opened websites");
 	}
 
-	@When("login with card {string} and {string}")
+	@When("^login with card (.+) and (.+)$")
 	public void login_with_card_pramodh_debit_and(String username, String int1) {
 		System.out.println("Logged In with " + username + " and " + int1 + " done");
 	}
